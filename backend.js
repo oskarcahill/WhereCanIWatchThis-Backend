@@ -1,7 +1,7 @@
 const express = require("express")
 const cheerio = require("cheerio")
 const axios = require("axios")
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 app.listen(PORT, () => console.log(`server is active and running on port ${PORT}`));
